@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="./assets/logomark.svg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Homesmart</title>
+		<title>HomeSmart</title>
 	</head>
 	<body
 		class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800"
@@ -14,7 +14,7 @@
 			<div class="container mx-auto flex items-center justify-between">
 				<a
 					href="/"
-					class="focus:outline-none focus:ring focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity"
+					class="focus:outline-none focus-visible:ring-4 focus:ring ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity"
 					aria-label="Go to homepage"
 				>
 					<img
@@ -51,7 +51,7 @@
 				>
 					<a
 						role="menuitem"
-						class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors"
+						class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus:ring focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors"
 						href="/"
 						>Home</a
 					>
@@ -79,29 +79,36 @@
 				</div>
 			</div>
 		</nav>
+
+		<!-- header -->
 		<header class="relative pt-16 md:pt-24 lg:pt-48">
+			<!-- bg -->
 			<div
-				class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
+				class="absolute inset-0 bottom-8 md:-bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
 			></div>
-			<div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+			<!-- container -->
+			<div class="container mx-auto grid grid-rows-1 place-items-end">
 				<img
 					src="./assets/couch.png"
+					alt="couch"
 					class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto"
-					alt="Couch"
 				/>
 				<img
 					src="./assets/app.svg"
-					class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:w-64 lg:w-72"
 					alt="app"
+					class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-30 sm:w-42 md:w-54 lg:w-62"
 				/>
 			</div>
 		</header>
+
+		<!-- cards-section -->
 		<main
-			class="grid gap-12 sm:gap-16 md:gap-24 lg:gap-32 px-8 overflow-hidden"
+			class="grid gap:12 sm:gap-16 md:gap-24 lg:gap-32 px-2 overflow-hidden"
 		>
+			<!-- button -->
 			<a
-				href="#"
-				class="py-2 px-6 bg-amber-400 dark:text-neutral-900 mx-auto my-12 flex gap-2 shadow-xl hover:shadow-none transition-shadow focus:ring focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-amber-400 dark:ring-offset-neutral-800"
+				href=""
+				class="py-2 px-6 bg-amber-400 dark:text-neutral-900 mx-auto my-12 flex gap-2 shadow-xl hover:shadow-none transition-shadow focus:outline-none focus:ring focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-amber-400 dark:ring-offset-neutral-800"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -117,15 +124,20 @@
 						d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
 					/>
 				</svg>
-				<span>Download the App</span>
+				<span>Download Our App</span>
 			</a>
-			<section aria-labelledby="qualities" class="relative">
+
+			<!-- cards -->
+			<section
+				aria-labelledby="qualities"
+				class="relative"
 				<img
-					src="./assets/dots.svg"
-					class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7"
-					alt="dots"
-					aria-hidden="true"
-				/>
+				src="./assets/dots.svg"
+				class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7"
+				alt="dots"
+				aria-hidden="true"
+			>
+				<!-- dots-image -->
 				<img
 					src="./assets/dots.svg"
 					class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-24 xl:-right-7"
@@ -133,9 +145,11 @@
 					aria-hidden="true"
 				/>
 				<h2 id="qualities" class="sr-only">Our Qualities</h2>
+				<!-- cards-container -->
 				<div
 					class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between"
 				>
+					<!-- card-1 -->
 					<div class="grid gap-4 justify-items-center text-center md:flex-1">
 						<div class="rounded-full border-8 border-amber-400 p-4">
 							<svg
@@ -156,6 +170,8 @@
 						<h3 class="text-3xl font-bold">Safe</h3>
 						<p>Our products are secure and private out-of-the-box</p>
 					</div>
+
+					<!-- card-2 -->
 					<div class="grid gap-4 justify-items-center text-center md:flex-1">
 						<div class="rounded-full border-8 border-amber-400 p-4">
 							<svg
@@ -176,6 +192,8 @@
 						<h3 class="text-3xl font-bold">Efficient</h3>
 						<p>Feel good about your wallet and the environment</p>
 					</div>
+
+					<!-- card-3 -->
 					<div class="grid gap-4 justify-items-center text-center md:flex-1">
 						<div class="rounded-full border-8 border-amber-400 p-4">
 							<svg
@@ -198,6 +216,8 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- our-partners -->
 			<section
 				aria-labelledby="partners"
 				class="text-center grid gap-8 place-items-center"
@@ -244,13 +264,14 @@
 					>
 						<img src="./assets/partner6.svg" alt="Partner" class="h-16 w-16" />
 					</div>
-					<div
+					<!-- <div
 						class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md"
 					>
 						<img src="./assets/partner7.svg" alt="Partner" class="h-16 w-16" />
-					</div>
+					</div> -->
 				</div>
 			</section>
+			<!-- floating-image -->
 			<section aria-labelledby="home" class="relative">
 				<div class="flex flex-wrap-reverse gap-8 justify-center">
 					<div
@@ -276,106 +297,14 @@
 				<div
 					class="absolute -bottom-6 -right-32 -z-10 aspect-square md:border-8 border-amber-400 rounded-full md:w-64 lg:w-96 xl:max-w-lg"
 				></div>
-				<div
+				<br />
+				<br />
+				<!-- <div
 					class="bg-teal-900 h-24 xl:h-48 -mx-8 mt-12 xl:mt-0 xl:absolute w-screen -bottom-8 -z-10"
-				></div>
+				></div> -->
 			</section>
 		</main>
-		<section
-			aria-labelledby="contact"
-			class="container mx-auto px-8 overflow-hidden"
-		>
-			<div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
-				<div class="md:flex-1 md:max-w-sm relative">
-					<img src="./assets/lamp.png" alt="Lamp" class="mx-auto" />
-					<a
-						href="#"
-						class="py-2 px-6 bg-amber-400 dark:text-neutral-900 w-max mx-auto mt-12 md:mb-12 flex gap-2 shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-amber-400 dark:ring-offset-neutral-800"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-6 w-6"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-							stroke-width="2"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-							/>
-						</svg>
-						<span>Download the App</span>
-					</a>
-					<img
-						src="/assets/app.svg"
-						alt="app"
-						width="240"
-						class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs"
-					/>
-					<div
-						class="absolute -bottom-18 left-1/2 -translate-x-1/2 -z-10 aspect-square md:border-8 border-amber-400 rounded-full md:w-72 lg:w-96"
-					></div>
-				</div>
-				<form
-					class="relative border-8 border-neutral-900 p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 md:my-12 lg:my-16 bg-white dark:bg-neutral-800 w-full"
-				>
-					<h2 id="contact" class="text-3xl font-bold">Let’s Connect</h2>
-					<div class="relative">
-						<input
-							type="text"
-							id="name"
-							class="peer form-input w-full border-4 border-amber-400 rounded-md focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent"
-							placeholder="Your Name"
-						/>
-						<label
-							for="name"
-							class="text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300"
-						>
-							Your Name
-						</label>
-					</div>
-					<div class="relative">
-						<input
-							type="email"
-							id="email"
-							class="peer form-input w-full border-4 border-amber-400 rounded-md focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent"
-							placeholder="Your Email"
-						/>
-						<label
-							for="email"
-							class="text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 peer-focus:-top-4 peer-focus:left-2  peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300"
-						>
-							Your Email
-						</label>
-					</div>
-					<div class="relative">
-						<textarea
-							name="content"
-							id="content"
-							cols="20"
-							rows="5"
-							class="peer form-textarea resize-none w-full border-4 border-amber-400 rounded-md focus:ring focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent"
-							placeholder="How can we help?"
-						></textarea>
-						<label
-							for="content"
-							class="text-neutral-500 text-sm font-bold uppercase absolute -top-3 left-2 -translate-y-1/2 transition-all peer-placeholder-shown:left-4 peer-placeholder-shown:top-6 peer-placeholder-shown:text-neutral-900 peer-focus:-top-4 peer-focus:left-2 peer-focus:text-neutral-600 dark:peer-focus:text-neutral-300"
-						>
-							How can we help?
-						</label>
-					</div>
-					<a
-						role="menuitem"
-						class="py-2 px-6 bg-neutral-900 text-white w-max shadow-xl hover:shadow-none transition-shadow focus:outline-none focus:ring focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-amber-400"
-						href="/"
-					>
-						Sign Up
-					</a>
-				</form>
-			</div>
-		</section>
+
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>
