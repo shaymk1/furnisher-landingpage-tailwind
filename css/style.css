@@ -771,6 +771,10 @@ video {
   width: 2rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -789,10 +793,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .w-max {
@@ -883,12 +883,12 @@ video {
   gap: 1rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-8 {
@@ -1310,10 +1310,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:-bottom-24 {
-    bottom: -6rem;
-  }
-
   .md\:bottom-24 {
     bottom: 6rem;
   }

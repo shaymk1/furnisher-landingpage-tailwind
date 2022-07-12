@@ -1,4 +1,4 @@
-import "./css/style.css";
+
 
 const navBtn = document.querySelector("#menu");
 const menuBar = document.querySelector('[role="menubar"]');
